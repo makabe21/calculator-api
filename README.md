@@ -30,13 +30,20 @@ Este proyecto es una API desarrollada con FastAPI para el curso de Programación
     OPERACIÓN----------MÉTODO--------ENDPOINT----------PARÁMETROS
     Suma                GET           /sum             num1, num2
     Resta               GET           /subtract        num1, num2
-    Multiplicación      GET
+    Multiplicación      GET           /Multiply        num1, num2
     División            GET
 
 >Ejemplo de uso (Suma):
 
 GET /sum? num1=10 & num2=5
 Respuesta: {"operation": "sum", "num1": 10, "num2": 5, "result": 15}
+
+Ejemplo de uso
+GET /multiplicar/2/3
+Respuesta:
+{
+  "resultado": 6
+}
 
 >Pruebas automatizadas
 
@@ -54,3 +61,4 @@ pytest
 >Integrantes
 
     - Mitzy Yuridia Cu Chén
+    - Jefferson Nimrod Perez Dominguez
