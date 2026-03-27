@@ -9,4 +9,4 @@ app.include_router(multiply.router)
 
 @app.get("/")
 def read_root():
-    return {"Hola": "API Calculadora"}
+    return {"message": "API Calculadora"}
